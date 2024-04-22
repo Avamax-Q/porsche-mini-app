@@ -1,0 +1,65 @@
+.container {
+    max-width: 1200px; /* Limit container width for better layout */
+    margin: 0 auto; /* Center container horizontally */
+    padding: 50px; /* Add some padding for content */
+}
+
+h1 {
+    font-size: 2.5em; /* Larger heading size */
+    text-align: center; /* Center text horizontally */
+    margin-bottom: 20px; /* Spacing after heading */
+}
+
+p {
+    font-size: 1.1em; /* Slightly larger paragraph text */
+    line-height: 1.5; /* Improve readability with line spacing */
+    margin-bottom: 30px; /* Spacing between paragraphs */
+}
+
+.keyRaces {
+    text-align: center;
+    border-top: 1px solid #ddd; /* Add a subtle border */
+    padding-top: 20px; /* Add padding after border */
+    margin-top: 30px; /* Spacing above key races section */
+}
+
+.keyRaces h2 {
+    font-size: 1.8em; /* Subheading size */
+    margin-bottom: 10px; /* Spacing after subheading */
+}
+
+.keyRaces ul {
+    list-style: none; /* Remove default bullet points */
+    padding: 0; /* Reset padding */
+    margin: 0; /* Reset margin */
+}
+
+.keyRaces li a {
+
+    display: inline-block; /* Allow applying styles to links */
+    padding: 10px 20px; /* Add padding for content */
+    border-radius: 5px; /* Rounded corners for boxes */
+    background-color: #f5f5f5; /* Light background color */
+    color: #333; /* Text color */
+    text-decoration: none; /* Remove default underline */
+    transition: background-color 0.2s ease-in-out; /* Smooth transition on hover */
+}
+
+.keyRaces li a:hover {
+    background-color: #ddd;
+    text-decoration: underline; /* Add underline on hover */
+    /* Change background color on hover */
+}
+.keyRaces li a {
+    /* Existing styles... */
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1); /* Subtle text shadow */
+}
+
+.keyRaces li {
+    margin-bottom: 25px; /* Add spacing between list items */
+}
+
+.keyRaces li a {
+    /* Existing styles... */
+    margin-right: 25px; /* Add spacing between links horizontally */
+}

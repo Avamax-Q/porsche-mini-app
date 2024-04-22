@@ -1,0 +1,45 @@
+/* Header.css */
+.header {
+    background-color: #333;
+    padding: 20px 0;
+}
+
+.header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.header nav ul li:last-child {
+    margin-right: 0;
+}
+
+.header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.header nav ul li a:hover {
+    color: #ffcc00;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.logo {
+    width: 80px; /* Adjust size as needed */
+}
+
+.header-right {
+    color: rgba(0, 0, 0, 0.1); /* Grey color with 10% opacity */
+}

@@ -1,0 +1,91 @@
+.container {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack elements vertically */
+    min-height: 100vh; /* Ensure full viewport height */
+    font-family: Arial, sans-serif; /* Base font family */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-image: url("../../../public/test.png"); /* Replace with your image path */
+    background-repeat: no-repeat; /* Prevent image tiling */
+    background-size: cover; /* Cover entire container */
+    background-position: center; /* Center image */
+    /* Add transparency effect */
+
+
+}
+.container__bg {
+    opacity: 0.8; /* Adjust opacity as needed (0-1) */
+}
+.container {
+    /* Apply the background effect class */
+    background: inherit; /* Inherit background properties from .container__bg */
+}
+.hero {
+    text-align: center; /* Center text horizontally */
+}
+
+.heroText {
+    text-align: center; /* Center text horizontally */
+    color: white; /* Text color */
+    animation: animateText 5s ease-in-out infinite; /* Animation definition */
+}
+
+@keyframes animateText {
+    from {
+        opacity: 0; /* Start transparent */
+        transform: translateY(20px); /* Move text down from top */
+    }
+    to {
+        opacity: 1; /* End fully opaque */
+        transform: translateY(0); /* Move text back to original position */
+    }
+}
+
+.hero h1 {
+    font-size: 3em; /* Large heading */
+    margin-bottom: 20px; /* Spacing after heading */
+}
+
+.hero p {
+    font-size: 1.2em; /* Slightly larger paragraph text */
+    line-height: 1.5; /* Improve readability with line spacing */
+}
+
+.carScroller {
+    flex: 1; /* Share remaining space proportionally */
+    overflow-x: scroll; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent line breaks */
+    padding: 20px; /* Add some padding */
+}
+
+.carImage {
+    display: inline-block; /* Images displayed side-by-side */
+    width: 300px;
+    height: 200px;/* Adjust width as needed */
+    margin-right: 10px; /* Add spacing between images */
+    border-radius: 5px; /* Add subtle rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.carScroller p {
+    text-align: center; /* Center text for car descriptions */
+    font-size: 0.9em; /* Smaller text for descriptions */
+    margin-top: 10px; /* Spacing above description */
+}
+
+.ctaButton {
+    background-color: #F00; /* Red color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em; /* Button text size */
+    cursor: pointer;
+    margin: 20px auto; /* Center button horizontally */ /* Added margin for spacing */
+    display: block; /* Make button full width */
+}
+
+.ctaButton:hover {
+    background-color: #D00; /* Slightly darker red on hover */
+    transform: scale(1.02); /* Slight scale animation on hover */
+}

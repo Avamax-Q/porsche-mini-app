@@ -1,0 +1,67 @@
+/* Models.module.css */
+.container {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.modelsGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.modelCard {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.modelCard:hover {
+    transform: scale(1.05); /* Slight scale on hover */
+}
+
+.modelCard img {
+    width: 100%; /* Removed inline style */
+    height: 200px; /* Removed inline style */
+    object-fit: cover; /* Removed inline style */
+}
+
+.cardInfo {
+    padding: 20px;
+    flex: 1;
+}
+
+.cardInfo h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.cardInfo p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.cardLink {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: cadetblue;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 3px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.cardLink:hover {
+    background-color: #0067cc;
+}

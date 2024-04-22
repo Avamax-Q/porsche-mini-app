@@ -1,0 +1,35 @@
+/* PageTransitions.css */
+.page-container {
+    position: relative;
+}
+
+.page-container > div {
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.page-container > div.fade-enter {
+    opacity: 0;
+    animation: fadeOut 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
